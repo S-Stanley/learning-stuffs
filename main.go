@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	"time"
+	// "time"
 )
 
 var NUMBER_OF_QUESTION int = 5;
@@ -23,7 +23,7 @@ func getData() map[string]string {
 		"parler": "hablar",
 		"donner": "dar",
 		"voir (regarder)": "ver",
-		"manger": "ver",
+		"manger": "comer",
 		"prendre": "tomar",
 		"vivre": "vivir",
 		"avoir besoin de": "necessitar",
@@ -67,8 +67,8 @@ func play(data map[string]string) {
 	fmt.Printf("You made %d on %d\n", points, NUMBER_OF_QUESTION);
 }
 
-func main(){
-	rand.Seed(time.Now().Unix());
-	var data = getData();
-	play(data);
-}
+// func main(){
+// 	rand.Seed(time.Now().Unix());
+// 	var data = getData();
+// 	play(data);
+// }
